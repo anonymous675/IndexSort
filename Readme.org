@@ -1,0 +1,12 @@
+This repo contains code to sort out tag sequences from fastq
+files. The data that is tested comes from eDNA amplicon data sequenced
+on a MiSeq with version 2 chemistry. The protocol used are using a
+dual tagging systems. This means that both there are tags both prior
+and after the sequence barcode that determine the origin of the
+sample.
+
+Many of the most common tools to sort by tags are not designed with
+such a tag system in mind. In addition project for testing suffered
+from multi-index-tag ligation which means that there sometimes were
+more than one tag attached to the fragment. In such cases the tag
+closest to the actual barcode should be used for analysis.
